@@ -3,13 +3,68 @@
 <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
     <title>Mrz's home</title>
+    <style type="text/css">
+        body {
+            margin: auto 100px;
+        }
+    	h1 {text-align: center;}
+    	#cv {
+    		text-align: center;
+    		margin-bottom: 100px;
+            font-size: 1.2em;
+    	}
+        #project {
+            margin-bottom: 50px;
+        }
+        p {
+            margin-bottom: -8px;
+        }
+        .notes{
+        	margin-bottom: 30px;
+        }
+    </style>
 </head>
 <body>
-<h1>This is the very first website of Runze Mao.</h1>
-<div>
-<a href="./files/DtctOfEmotBkps.pdf">
-    My summary about the project concerning social sentiment analysis.
-</a>
+<h1>A simple website of Runze Mao</h1>
+
+<div id="cv">
+<a href="./files/cv.pdf">View my cv here</a>
 </div>
+
+<div id="project">
+My work on the project concerning social sentiment analysis is summarized in <a href="./files/DtctOfEmotBkps.pdf"><i>this paper</i></a>.
+<!-- <br/> -->
+<!-- <a href="./files/DtctOfEmotBkps.pdf"> -->
+    <!-- <i>A Data-processing Method Applied to the Detection of Emotional Breakpoints in Social Media</i> -->
+<!-- </a> -->
+</div>
+
+<div class="notes">
+<p>Listed below are some of my notes during my study. </p>
+<p>I began from the fundamental principles of machine learning, and the first problem I encountered was the <i>Vapnik–Chervonenkis dimension</i>. I searched for and read lots of materials before I finally understood this theory.</p>
+<ul>
+	<li><a href="./files/vcDim.pdf">A detailed proof of VC dimension</a></li>
+</ul>
+</div>
+
+<div class="notes">
+<p>The second problem for me was the <i>support vector machine</i>. Both the Lagrange multiplier and KKT conditions involve very abstract mathematical concepts. The book <i>Convex Optimization</i> (Boyd and Vandenberghe, 2004) was of great help to me because of its rigorous and concrete explanation. However, the notes concerning this were taken down on paper, thus unavailable in electronic form.</p>
+</div>
+
+<div class="notes">
+<p>When learning word2vec, I was confused by the word `softmax`. It is in essence an extension of the logistic function and is often combined with the cross-entropy loss function. A simple comparison can be found below. However, what is truly interesting is its hierarchical form (Morin and Bengio, 2005), which reduces the computation from <i>O(N)</i> to <i>O(log N)</i>.</p>
+<ul>
+	<li><a href="./files/softmax.pdf">logistic VS softmax</a></li>
+</ul>
+</div>
+
+<div class="notes">
+<p>During my study at Doc. Rao's lab, I also did some research into non-negative matrix factorization (NMF for short). Several useful formulas as well as the proof to them are concluded for future review.</p>
+<ul>
+    <li><a href="./files/nmf.pdf">unsupervised method: non-negative matrix factorization</a></li>
+    <li><a href="./files/linear_algebra.pdf">techniques in matrix calculus</a></li>
+</ul>
+</div>
+
 </body>
 </html>
